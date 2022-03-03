@@ -1,7 +1,7 @@
 package com.piuralsight.hibernatfundamentals;
 
-import com.piuralsight.hibernatfundamentals.airport.Department;
-import com.piuralsight.hibernatfundamentals.airport.Manager;
+import com.piuralsight.hibernatfundamentals.airport.Payment;
+import com.piuralsight.hibernatfundamentals.airport.Ticket;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -13,16 +13,21 @@ public class Main {
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
 
-        Manager john = new Manager("John Smith");
-        Department accounting = new Department();
-        accounting.setName("Accounting");
-        john.setDepartment(accounting);
+        Ticket ticket = new Ticket();
+        ticket.setNumber("AA1234");
+        ticket.setOrigin("London");
+        ticket.setDestination("Moscow");
+
+        Payment payment = new Payment();
+        payment.setTicket(ticket);
+        payment.setAmount(200);
 
 
 // persist(save) all created objects ane by one meaning that we insert into the db
         // a corresponding record with their information
-        em.persist(john);
-        em.persist(accounting);
+
+        em.persist(ticket);
+        em.persist(payment);
 
 
 
