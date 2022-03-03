@@ -2,34 +2,26 @@ package com.piuralsight.hibernatfundamentals.airport;
 
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
-
-@Entity
-@Table(name = "TICKETS")
-public class Ticket {
+@MappedSuperclass
+public abstract class Ticket {
 
     @Id
     @GeneratedValue
-    @Column(name = "ID")
     private int id;
-
-    @Column(name = "NUMBER")
     private String number;
 
-    @ManyToMany
-    private List<Passenger> passengers = new ArrayList<>();
+    @ManyToOne
+    @JoinColumn(name = "passenger_id")
+    private Passenger passenger;
 
-
-    public Ticket() {
+    public Passenger getPassenger() {
+        return passenger;
     }
 
-    public Ticket(String number) {
-        this.number = number;
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
     }
-
 
     public int getId() {
         return id;
@@ -43,11 +35,4 @@ public class Ticket {
         this.number = number;
     }
 
-    public List<Passenger> getPassengers() {
-        return Collections.unmodifiableList(passengers);
-    }
-
-    public void addPassenger(Passenger passenger) {
-        passengers.add(passenger);
-    }
 }
