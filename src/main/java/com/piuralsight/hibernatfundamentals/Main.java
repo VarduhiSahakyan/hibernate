@@ -1,7 +1,7 @@
 package com.piuralsight.hibernatfundamentals;
 
-import com.piuralsight.hibernatfundamentals.airport.Passenger;
-import com.piuralsight.hibernatfundamentals.airport.Ticket;
+import com.piuralsight.hibernatfundamentals.airport.Department;
+import com.piuralsight.hibernatfundamentals.airport.Manager;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -9,43 +9,20 @@ import javax.persistence.Persistence;
 
 public class Main {
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("hibernatefundamentals.m04.ex01");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("hibernatefundamentals.m06.ex01");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
 
-        Passenger john = new Passenger("John Smith");
-        Passenger mike = new Passenger("Michael Johnson");
+        Manager john = new Manager("John Smith");
+        Department accounting = new Department();
+        accounting.setName("Accounting");
+        john.setDepartment(accounting);
 
-        Ticket ticket1 = new Ticket("AA1234");
-        Ticket ticket2 = new Ticket("BB5678");
-        Ticket ticket3 = new Ticket("CC0987");
-
-
-
-        john.addTicket(ticket1);
-        john.addTicket(ticket2);
-        john.addTicket(ticket3);
-        mike.addTicket(ticket1);
-        mike.addTicket(ticket2);
-        mike.addTicket(ticket3);
-
-
-        ticket1.setPassenger(john);
-        ticket2.setPassenger(john);
-        ticket3.setPassenger(mike);
-        john.addTicket(ticket1);
-        john.addTicket(ticket2);
-
-
-        john.addTicket(ticket3);
 
 // persist(save) all created objects ane by one meaning that we insert into the db
         // a corresponding record with their information
-        em.persist(mike);
         em.persist(john);
-        em.persist(ticket1);
-        em.persist(ticket2);
-        em.persist(ticket3);
+        em.persist(accounting);
 
 
 
