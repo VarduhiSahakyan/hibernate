@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 
 public class Main {
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("hibernatefundamentals.m05.ex01");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("hibernatefundamentals.m04.ex01");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
 
@@ -30,13 +30,14 @@ public class Main {
         mike.addTicket(ticket3);
 
 
-        ticket1.addPassenger(john);
-        ticket2.addPassenger(john);
-        ticket3.addPassenger(john);
-        ticket1.addPassenger(mike);
-        ticket2.addPassenger(mike);
-        ticket3.addPassenger(mike);
+        ticket1.setPassenger(john);
+        ticket2.setPassenger(john);
+        ticket3.setPassenger(mike);
+        john.addTicket(ticket1);
+        john.addTicket(ticket2);
 
+
+        john.addTicket(ticket3);
 
 // persist(save) all created objects ane by one meaning that we insert into the db
         // a corresponding record with their information
@@ -45,6 +46,7 @@ public class Main {
         em.persist(ticket1);
         em.persist(ticket2);
         em.persist(ticket3);
+
 
 
         em.getTransaction().commit();

@@ -18,7 +18,7 @@ public class Passenger {
     private String name;
 
 
-  @ManyToMany(mappedBy = "passengers")
+    @OneToMany(mappedBy = "passenger")
     private List<Ticket> tickets = new ArrayList<Ticket>();
 
 
