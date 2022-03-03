@@ -18,7 +18,7 @@ public class Passenger {
     private String name;
 
 
-    @OneToMany(mappedBy = "passenger")
+  @ManyToMany(mappedBy = "passengers")
     private List<Ticket> tickets = new ArrayList<Ticket>();
 
 
@@ -33,10 +33,6 @@ public class Passenger {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {

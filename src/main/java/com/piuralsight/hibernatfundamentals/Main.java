@@ -14,28 +14,37 @@ public class Main {
         em.getTransaction().begin();
 
         Passenger john = new Passenger("John Smith");
-        Ticket ticket1 = new Ticket("AA1234");
-        ticket1.setPassenger(john);
-
         Passenger mike = new Passenger("Michael Johnson");
+
+        Ticket ticket1 = new Ticket("AA1234");
         Ticket ticket2 = new Ticket("BB5678");
-        ticket2.setPassenger(john);
+        Ticket ticket3 = new Ticket("CC0987");
+
+
 
         john.addTicket(ticket1);
         john.addTicket(ticket2);
-
-        Ticket ticket3 = new Ticket("CC0987");
-        ticket3.setPassenger(mike);
-
         john.addTicket(ticket3);
+        mike.addTicket(ticket1);
+        mike.addTicket(ticket2);
+        mike.addTicket(ticket3);
+
+
+        ticket1.addPassenger(john);
+        ticket2.addPassenger(john);
+        ticket3.addPassenger(john);
+        ticket1.addPassenger(mike);
+        ticket2.addPassenger(mike);
+        ticket3.addPassenger(mike);
+
+
 // persist(save) all created objects ane by one meaning that we insert into the db
         // a corresponding record with their information
         em.persist(mike);
-        em.persist(ticket3);
         em.persist(john);
         em.persist(ticket1);
         em.persist(ticket2);
-
+        em.persist(ticket3);
 
 
         em.getTransaction().commit();
