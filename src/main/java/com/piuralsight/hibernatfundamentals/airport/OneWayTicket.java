@@ -1,6 +1,6 @@
 package com.piuralsight.hibernatfundamentals.airport;
 
- 
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.time.LocalDate;
