@@ -11,7 +11,7 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("hibernatefundamentals.m09.ex01");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("hibernatefundamentals.m01.ex07");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
 

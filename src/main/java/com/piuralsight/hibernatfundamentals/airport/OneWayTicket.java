@@ -1,11 +1,12 @@
 package com.piuralsight.hibernatfundamentals.airport;
 
-import javax.persistence.DiscriminatorValue;
+
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.time.LocalDate;
 
 @Entity
-@DiscriminatorValue("O")
+@Table(name = "ONE_WAY_TICKETS")
 public class OneWayTicket extends Ticket {
 
     private LocalDate lastDepartureDate;

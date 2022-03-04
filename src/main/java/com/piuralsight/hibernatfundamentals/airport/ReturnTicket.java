@@ -1,12 +1,13 @@
 package com.piuralsight.hibernatfundamentals.airport;
 
 
-import javax.persistence.DiscriminatorValue;
+
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.time.LocalDate;
 
 @Entity
-@DiscriminatorValue("R")
+@Table(name = "RETURN_TICKETS")
 public class ReturnTicket extends Ticket {
 
     private LocalDate latestReturnDate;

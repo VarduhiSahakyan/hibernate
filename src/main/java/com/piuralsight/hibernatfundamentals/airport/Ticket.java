@@ -5,8 +5,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "TICKETS")
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "TICKET_TYPE")
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Ticket {
 
     @Id
