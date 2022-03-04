@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19a6dbbf-446f-499d-aa43-987d314ca9d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Passenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/VipConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/OneWayTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/OneWayTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/OneWayTicket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Ticket.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -62,11 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="13" column="105" selection-start-line="13" selection-start-column="105" selection-end-line="13" selection-end-column="105" />
+            <state relative-caret-position="452">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,37 +76,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/ReturnTicket.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/VipConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="286">
+              <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+              <folding>
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Passenger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
                 <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/OneWayTicket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Ticket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -112,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+            <state relative-caret-position="264">
+              <caret line="12" column="99" selection-start-line="12" selection-start-column="99" selection-end-line="12" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -130,7 +133,7 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_COMMON_BRANCH" value="joinedsubclassstrategy" />
+    <option name="RECENT_COMMON_BRANCH" value="tableperconcreateclassstrategy" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -140,19 +143,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airoport/Passenger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Airport.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Passenger.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/ReturnTicket.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/OneWayTicket.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Ticket.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Passenger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/VipConverter.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1116" />
-    <option name="y" value="66" />
+    <option name="x" value="1164" />
     <option name="width" value="809" />
     <option name="height" value="933" />
   </component>
@@ -300,7 +303,7 @@
       <workItem from="1646291392159" duration="3194000" />
       <workItem from="1646295033734" duration="239000" />
       <workItem from="1646317276728" duration="1059000" />
-      <workItem from="1646374496268" duration="2443000" />
+      <workItem from="1646374496268" duration="3740000" />
     </task>
     <task id="LOCAL-00001" summary="adding classes for example ov one non entity class inherit">
       <created>1646317733138</created>
@@ -330,11 +333,25 @@
       <option name="project" value="LOCAL" />
       <updated>1646378504765</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="adding classes for example of using table per concrete class strategy">
+      <created>1646378765930</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646378765930</updated>
+    </task>
+    <task id="LOCAL-00006" summary="adding classes for example of using conversion between different data representations in Java and in the DB">
+      <created>1646379023134</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646379023134</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22960000" />
+    <option name="totallyTimeSpent" value="24257000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,10 +363,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1116" y="66" width="809" height="933" extended-state="0" />
+    <frame x="101" y="108" width="809" height="933" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" weight="0.30173564" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.30173564" />
       <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.141258" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -359,7 +376,7 @@
       <window_info id="Persistence" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298731" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4625" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4625" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26218852" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -391,7 +408,8 @@
     <MESSAGE value="adding classes for example of using single table hierarchy to create the 1 table by 3 classes" />
     <MESSAGE value="adding classes for example of using joined hierarchy" />
     <MESSAGE value="adding classes for example of using table per concrete class strategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding classes for example of using table per concrete class strategy" />
+    <MESSAGE value="adding classes for example of using conversion between different data representations in Java and in the DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding classes for example of using conversion between different data representations in Java and in the DB" />
   </component>
   <component name="editorHistoryManager">
     <entry file="das://9ae1ff6d-ad11-42a4-ae47-07ac8ecdafd9/schema/m02_ex01/table/passengers/index/FKqxlre0tsy9gth5n4mc2px1o6o" />
@@ -485,29 +503,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Passenger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://9ae1ff6d-ad11-42a4-ae47-07ac8ecdafd9/schema/m09_ex01/table/tickets">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="ed76c63a-4f21-4f12-a193-93d62dab60f1">
           <filtering>
             <filter text="" />
           </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -540,12 +541,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="13" column="105" selection-start-line="13" selection-start-column="105" selection-end-line="13" selection-end-column="105" />
+        <state relative-caret-position="264">
+          <caret line="12" column="99" selection-start-line="12" selection-start-column="99" selection-end-line="12" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/Passenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/piuralsight/hibernatfundamentals/airport/VipConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+          <folding>
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
           </folding>
         </state>
       </provider>
