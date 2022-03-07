@@ -5,24 +5,10 @@
              version="2.0">
 
 
-    <persistence-unit name="hibernatefundamentals.m03.ex07">
+    <persistence-unit name="hibernatefundamentals.m03.ex08">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <properties>
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/M03_EX07"/>
-            <property name="javax.persistence.jdbc.user" value="root"/>
-            <property name="javax.persistence.jdbc.password" value="123456"/>
-
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
-
-
-            <property name="hibernate.show_sql" value="true"/>
-            <property name="hibernate.format_sql" value="true"/>
-
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
-
-        </properties>
+        <class>com.piuralsight.hibernatfundamentals.airport.Country</class>
 
     </persistence-unit>
 </persistence>

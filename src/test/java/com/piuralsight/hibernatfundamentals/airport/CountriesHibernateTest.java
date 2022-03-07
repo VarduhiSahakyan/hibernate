@@ -34,7 +34,7 @@ public class CountriesHibernateTest {
         em.getTransaction().begin();
         for (int i = 0; i < COUNTRY_INIT_DATA.length; i++) {
             String[] countryInitData = COUNTRY_INIT_DATA[i];
-            Country country = new Country(countryInitData[0], countryInitData[1]);
+            Country country = new Country(countryInitData[0], countryInitData[0]);
             em.persist(country);
         }
         em.getTransaction().commit();
@@ -42,7 +42,7 @@ public class CountriesHibernateTest {
 
     @Test
     public void testCountriesList() {
-        List<Country> countriesList = em.createQuery("select c from Country c").getResultList();
+        List countriesList = em.createQuery("select c from Country c").getResultList();
         Assertions.assertNotNull(countriesList);
         Assertions.assertEquals(COUNTRY_INIT_DATA.length, countriesList.size());
         for (int i = 0; i < expectedCountiesList.size(); i++) {
