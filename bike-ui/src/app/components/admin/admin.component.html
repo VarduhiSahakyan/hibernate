@@ -1,5 +1,9 @@
 <div class="container">
-  <table class="table table-bordered table-inverse">
+  <br>
+  <div class="row">
+    <a class="btn btn=primary" routerLink="/">Go to Registration Page</a>
+  </div> <br> <br>
+    <table class="table text-center table-bordered">
     <tr>
       <th>Owner Name</th>
       <th>Email</th>
@@ -8,7 +12,7 @@
     </tr>
     <tr *ngFor="let bike of bikes">
       <td>
-        {{bike.name}}
+    {{bike.name}}
       </td>
       <td>
         {{bike.email}}

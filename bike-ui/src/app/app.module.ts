@@ -6,16 +6,23 @@ import { AppComponent } from './app.component';
 import {ServiceService} from "./services/service.service";
 import {HttpClientModule} from "@angular/common/http";
 import { AdminComponent } from './components/admin/admin.component';
+import { HomeComponent } from './components/home/home.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {ViewRegistrationComponent} from "./components/view-registration/view-registration.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent
+    AdminComponent,
+    HomeComponent,
+    ViewRegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]
